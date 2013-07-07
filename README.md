@@ -11,26 +11,25 @@ A simple transport encoding category that enables Base64 and Base32 encoding/dec
 ***Usage***
 ```objc
 
-    #include "NSString+TransportEncoding.h"
-    
+#include "NSString+TransportEncoding.h"
     ...
+NSString *myString = @"This is a test";
     
-    NSString *myString = @"This is a test";
+//  base64 encode
+NSString *b64Enc = [myString base64EncodedString];
     
-    //  base64 encode
-    NSString *b64Enc = [myString base64EncodedString];
+//  base64 decode
+NSString *b64Dec = [myString base64DecodedString];
     
-    //  base64 decode
-    NSString *b64Dec = [myString base64DecodedString];
+//  base32 encode
+NSString *b32Enc = [myString base32EncodedString];
     
-    //  base32 encode
-    NSString *b32Enc = [myString base32EncodedString];
+//  base32 decode
+NSString *b32Dec = [myString base32DecodedString];
     
-    //  base32 decode
-    NSString *b32Dec = [myString base32DecodedString];
+//  url encode
+NSString *urlEnc = [myString urlEncodedString];
     
-    //  url encode
-    NSString *urlEnc = [myString urlEncodedString];
-    
-    //  url decode
-    NSString *urlDec = [myString urlDecodedString];
+//  url decode
+NSString *urlDec = [myString urlDecodedString];
+```
