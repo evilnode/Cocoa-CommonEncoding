@@ -27,3 +27,9 @@ A simple transport encoding category that enables Base64 and Base32 encoding/dec
     
     //  base32 decode
     NSString *b32Dec = [myString base32DecodedString];
+    
+    //  url encode
+    NSString *urlEnc = [myString urlEncodedString];
+    
+    //  url decode
+    NSString *urlDec = [myString urlDecodedString];
