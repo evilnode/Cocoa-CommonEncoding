@@ -13,4 +13,6 @@
 - (NSString *) base64DecodedString;
 - (NSString *) base32EncodedString;
 - (NSString *) base32DecodedString;
+- (NSString *) urlEncodedString;
+- (NSString *) urlDecodedString;
 @end

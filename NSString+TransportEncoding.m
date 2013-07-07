@@ -96,4 +96,14 @@ typedef enum {
     return [self transformWithFunction:StringTransformOperationBase32Decode];
 }
 
+- (NSString *) urlEncodedString
+{
+    return [self stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+}
+
+- (NSString *) urlDecodedString
+{
+    return [self stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+}
+
 @end
