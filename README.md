@@ -10,6 +10,10 @@ A simple transport encoding category that enables Base64 and Base32 encoding/dec
 
 ***Usage***
 
+    #include "NSString+TransportEncoding.h"
+    
+    ...
+    
     NSString *myString = @"This is a test";
     
     //  base64 encode
