@@ -4,6 +4,7 @@ NSString-TransportEncoding
 A simple transport encoding category that enables Base64 and Base32 encoding/decoding.  Mac OSX only.
 
 ***Requirements***
+
 1. Mac OSX 10.7+ (no iOS, sorry)
 2. Security Framework
 
