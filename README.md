@@ -9,6 +9,7 @@ A simple transport encoding category that enables Base64 and Base32 encoding/dec
 2. Security Framework
 
 ***Usage***
+```objc
 
     #include "NSString+TransportEncoding.h"
     
