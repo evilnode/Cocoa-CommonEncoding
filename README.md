@@ -1,7 +1,7 @@
 NSString-TransportEncoding
 ==========================
 
-A simple transport encoding category that enables Base64 and Base32 encoding/decoding.  Mac OSX only.
+A simple transport encoding category that enables Base64, URL, and Base32 encoding/decoding.  Mac OSX only.
 
 ***Requirements***
 
@@ -19,17 +19,17 @@ NSString *myString = @"This is a test";
 NSString *b64Enc = [myString base64EncodedString];
     
 //  base64 decode
-NSString *b64Dec = [myString base64DecodedString];
+NSString *b64Dec = [b64Enc base64DecodedString];
     
 //  base32 encode
 NSString *b32Enc = [myString base32EncodedString];
     
 //  base32 decode
-NSString *b32Dec = [myString base32DecodedString];
+NSString *b32Dec = [b32Enc base32DecodedString];
     
 //  url encode
 NSString *urlEnc = [myString urlEncodedString];
     
 //  url decode
-NSString *urlDec = [myString urlDecodedString];
+NSString *urlDec = [urlEnc urlDecodedString];
 ```
